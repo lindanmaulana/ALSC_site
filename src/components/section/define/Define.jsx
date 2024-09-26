@@ -8,9 +8,9 @@ const Define = () => {
   return (
     <LayoutsSection ref={defineRef}>
       <Title>Define / Menentukan</Title>
-      <div className="flex items-center gap-10 text-primary">
-        <div >
-          <h3 className="text-lg">
+      <div className="flex flex-col-reverse items-center gap-10 pt-10 lg:flex-row text-primary">
+        <div data-aos="zoom-in-up">
+          <h3 className="text-lg text-center lg:text-start">
             <span className="font-semibold">
               Pengambilan keputusan dalam keluarga merujuk
             </span>
@@ -21,7 +21,7 @@ const Define = () => {
             kesepakatan.
           </h3>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <img src={ImageHome.define} alt="Menentukan " />
         </div>
       </div>

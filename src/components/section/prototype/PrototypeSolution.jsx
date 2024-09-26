@@ -8,8 +8,8 @@ const PrototypeSolution = () => {
         Solusi dan Tanggapan
         <span className="absolute -bottom-2 left-0 transition-global group-hover:w-20 block w-10 h-[2px] bg-primary"></span>
       </h3>
-      <div className="grid grid-cols-2 gap-10">
-        <div className="">
+      <div className="grid gap-10 md:grid-cols-2">
+        <div className="" data-aos="fade-right">
           <img
             src={ImageHome.alsc5}
             alt="alsc1"
@@ -18,20 +18,32 @@ const PrototypeSolution = () => {
         </div>{" "}
         <div>
           <ul className="flex flex-col gap-4 mb-14">
-            <li className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li
+              data-aos="zoom-in-up"
+              data-aos-duration="1100"
+              className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50"
+            >
               <span className="font-semibold">
                 Berilah solusi dan tanggapan terhadap masalah yang dipilih dan
                 kaitkan dengan teori demokrasi yang kamu pahami!
               </span>{" "}
             </li>
-            <li className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li
+              data-aos="zoom-in-up"
+              data-aos-duration="1300"
+              className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50"
+            >
               <span className="font-semibold"> solusi:</span> Sama halnya dengan
               yang telah dijawab oleh narasumber, kita harus selalu
               berkomunikasi dengan orang tua, karena ketika kita berdemokrasi
               untuk mencari solusi, di situlah kita sedang berdemokrasi dan
               Jangan memaksakan kehendak Yang ada hanya untuk keuntungan pribadi
             </li>
-            <li className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50"
+            >
               <span className="font-semibold"> tanggapan:</span> Dukungan
               support dan motivasi terkait masa depan sangatlah menentukan bagi
               kehidupan kita selanjutnya. Jangan sampai kita berada di posisi
@@ -40,11 +52,15 @@ const PrototypeSolution = () => {
               pasti akan selalu mengiringi terhadap hasil yang dinanti-nanti
             </li>
           </ul>
-          <h4 className="text-3xl italic text-center text-transparent font-extrabo ld bg-clip-text bg-gradient-to-r from-sky-500 to-pink-600">
-            Kelompok 4 P5 kelas na XI. A-1
-          </h4>
         </div>
       </div>
+        <h4
+          data-aos="zoom-in-up"
+          data-aos-duration="1700"
+          className="text-3xl italic text-center text-transparent font-extrabo ld bg-clip-text bg-gradient-to-r from-sky-500 to-pink-600"
+        >
+          Kelompok 4 P5 kelas na XI. A-1
+        </h4>
     </LayoutsSection>
   );
 };

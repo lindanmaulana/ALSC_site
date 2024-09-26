@@ -10,7 +10,7 @@ const Prototype = () => {
       <Title>Prototype / Model Awal</Title>
 
       <div className="flex flex-col items-center gap-10 lg:flex-row text-primary ">
-        <div className="lg:w-[40%]">
+        <div className="lg:w-[40%]" data-aos="fade-right">
           <img
             src={ImageHome.prototype}
             alt="Empati"
@@ -18,8 +18,8 @@ const Prototype = () => {
           />
           {/* <img src={ImageHome.diskusiAnakDanOrangtua} alt="Empati" /> */}
         </div>
-        <div className="lg:w-[60%]">
-          <h3 className="text-lg">
+        <div className="lg:w-[60%]" data-aos="zoom-in-up">
+          <h3 className="text-lg text-center lg:text-start">
             <span className="font-semibold">
               Kemampuan untuk merancang, menguji, dan mengevaluasi ide atau
               solusi.

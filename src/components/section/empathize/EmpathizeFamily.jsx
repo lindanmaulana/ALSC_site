@@ -4,7 +4,7 @@ const EmpathizeFamily = () => {
   return (
     <LayoutsSection>
       <div className="text-center">
-        <p>
+        <p data-aos="zoom-in-up">
           {" "}
           Empati adalah kemampuan untuk merasakan apa yang dirasakan orang lain.
           Dalam keluarga, empati berperan sebagai jembatan yang menghubungkan

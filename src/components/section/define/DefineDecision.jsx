@@ -6,14 +6,14 @@ const DefineDecision = () => {
   return (
     <LayoutsSection>
       <SubTitle>Keputusan dalam Menentukan Jurusan</SubTitle>
-      <div className="grid grid-cols-2 gap-10 mb-10">
+      <div className="grid grid-cols-1 gap-10 mb-10 md:grid-cols-2">
         <div className>
           <ul className="flex flex-col gap-4 mb-14">
-            <li className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li data-aos="zoom-in-up" data-aos-duration="1100" className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
               <span className="font-semibold">Pengambilan Keputusan:</span> dan
               Menentukan Jurusan / Prodi di Dunia Perkuliahan
             </li>
-            <li className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li data-aos="zoom-in-up" data-aos-duration="1300" className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
               <span className="font-semibold ">
                 {" "}
                 Pengambilan keputusan dalam menentukan jurusan atau Prodi di
@@ -24,14 +24,14 @@ const DefineDecision = () => {
               demokrasi dalam keluarga diterapkan dengan menciptakan ruang
               diskusi yang terbuka dan seimbang antara orang tua dan anak kita
               bisa melakukan penerapan demokrasi ini dengan beberapa tahap yaitu
-              pertama melakukan riset mengenai berbagai pilihan pendidikan dan
+              pertama melakukan riset me    ngenai berbagai pilihan pendidikan dan
               karir pendapatannya, dan keputusan terakhir, yaitu pengambilan
               keputusan secara musyawarah, di sini itu sudah ada ya keputusan
               dan kesepakatan antara orang tua anak tanpa adanya paksaan
             </li>
           </ul>
         </div>
-        <div className="">
+        <div className="" data-aos="fade-left">
           <img
             src={ImageHome.alsc2}
             alt="alsc1"
@@ -40,8 +40,8 @@ const DefineDecision = () => {
         </div>{" "}
       </div>
       {/*  */}
-      <div className="grid grid-cols-2 gap-10 mb-10">
-        <div className="">
+      <div className="grid gap-10 mb-10 md:grid-cols-2">
+        <div className="" data-aos="fade-right">
           <img
             src={ImageHome.alsc3}
             alt="alsc1"
@@ -50,11 +50,11 @@ const DefineDecision = () => {
         </div>{" "}
         <div>
           <ul className="flex flex-col gap-4 mb-14">
-            <li className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li data-aos="zoom-in-up" data-aos-duration="1100" className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
               <span className="font-semibold">Pengambilan Keputusan:</span> dan
               Menentukan Jurusan / Prodi di Dunia Perkuliahan
             </li>
-            <li className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li data-aos="zoom-in-up" data-aos-duration="1300" className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
               <span className="font-semibold">
                 {" "}
                 Apa yang menurut anda menjadi kendala terbesar dalam mencapai
@@ -76,14 +76,14 @@ const DefineDecision = () => {
         </div>
       </div>
       {/*  */}
-      <div className="grid grid-cols-2 gap-10">
-        <div className>
+      <div className="grid gap-10 md:grid-cols-2">
+        <div>
           <ul className="flex flex-col gap-4 mb-14">
-            <li className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li data-aos="zoom-in-up" data-aos-duration="1100" className="px-5 py-2 text-sm rounded shadow-xl bg-primary text-fourth shadow-third/50">
               <span className="font-semibold">Pengambilan Keputusan:</span> dan
               Menentukan Jurusan / Prodi di Dunia Perkuliahan
             </li>
-            <li className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li data-aos="zoom-in-up" data-aos-duration="1300" className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
               <span className="font-semibold ">
                 {" "}
                 Bagaimana cara mengatasi perbedaan pendapat antara orang tua dan
@@ -94,7 +94,7 @@ const DefineDecision = () => {
               menghargai apapun keputusan yang diambil, serta harus terus
               mensupport
             </li>
-            <li className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
+            <li data-aos="zoom-in-up" data-aos-duration="1400" className="px-5 py-2 text-sm leading-relaxed rounded shadow-xl bg-primary text-fourth shadow-third/50">
               <span className="font-semibold ">
                 {" "}
                 kesadaran dalam diri kita masing masing terhadap pendapat orang
@@ -107,7 +107,7 @@ const DefineDecision = () => {
             </li>
           </ul>
         </div>
-        <div className="">
+        <div className="" data-aos="fade-left">
           <img
             src={ImageHome.alsc4}
             alt="alsc1"
@@ -115,7 +115,7 @@ const DefineDecision = () => {
           />
         </div>{" "}
       </div>
-        <h4 className="text-3xl italic text-center text-transparent font-extrabo ld bg-clip-text bg-gradient-to-r from-sky-500 to-pink-600">
+        <h4 data-aos="zoom-in-up" data-aos-duration="1500" className="pt-10 text-3xl italic text-center text-transparent font-extrabo ld bg-clip-text bg-gradient-to-r from-sky-500 to-pink-600">
           Kelompok 4 P5 kelas na XI. A-1
         </h4>
     </LayoutsSection>

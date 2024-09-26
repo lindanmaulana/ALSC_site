@@ -4,7 +4,7 @@ const PrototypeFamily = () => {
   return (
     <LayoutsSection>
       <div className="text-center">
-        <p>
+        <p data-aos="zoom-in-up">
           {" "}
           Prototipe adalah cara untuk menguji ide atau solusi dalam keluarga
           sebelum diambil keputusan akhir. Dalam keluarga, prototipe berperan

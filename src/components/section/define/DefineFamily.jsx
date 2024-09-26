@@ -4,7 +4,7 @@ const DefineFamily = () => {
   return (
     <LayoutsSection>
       <div className="text-center">
-        <p>
+        <p data-aos="zoom-in-up">
           {" "}
           Menentukan adalah kemampuan untuk membuat keputusan yang tepat dan
           bijaksana. Dalam keluarga, kemampuan ini berperan sebagai fondasi yang
