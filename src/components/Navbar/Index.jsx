@@ -1,8 +1,39 @@
 import { Link } from "react-router-dom";
 import useScroll from "../../hooks/useScroll";
+import usePropsDriling from "../../hooks/usePropsDriling";
+import { useCallback } from "react";
 
 const NavbarComponent = () => {
   const scroll = useScroll();
+  const { homeRef, empathizeRef, defineRef, prototypeRef } = usePropsDriling();
+  const dataNavbar = [
+    {
+      id: 1,
+      title: "Home",
+      ref: homeRef,
+    },
+    {
+      id: 2,
+      title: "Empathize",
+      ref: empathizeRef,
+    },
+    {
+      id: 3,
+      title: "Define",
+      ref: defineRef,
+    },
+    {
+      id: 4,
+      title: "Prototype",
+      ref: prototypeRef,
+    },
+  ];
+
+  const handlePropsDriling = useCallback((params) => {
+    if (params && params.current) {
+      params.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
     <header
       className={`w-full transition-global ${
@@ -32,35 +63,17 @@ const NavbarComponent = () => {
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
-                <li>
-                  <Link
-                    className="font-semibold text-white transition hover:text-gray-500/75"
-                    to="/"
-                  >
-                    {" "}
-                    Home{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    className="font-semibold text-white transition hover:text-gray-500/75"
-                    to="/about"
-                  >
-                    {" "}
-                    About{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    className="font-semibold text-white transition hover:text-gray-500/75"
-                    to="/contact"
-                  >
-                    {" "}
-                    Contact{" "}
-                  </Link>
-                </li>
+                {dataNavbar?.map((values) => (
+                  <li key={values.id}>
+                    <Link
+                      className="font-semibold text-white transition hover:text-gray-500/75"
+                      onClick={() => handlePropsDriling(values.ref)}
+                    >
+                      {" "}
+                      {values.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
