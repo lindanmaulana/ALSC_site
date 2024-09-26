@@ -5,8 +5,8 @@ const NavbarComponent = () => {
   const scroll = useScroll();
   return (
     <header
-      className={`w-full ${
-        scroll ? "fixed top-0 right-0" : "absolute top-0 right-0"
+      className={`w-full transition-global ${
+        scroll > 0 ? "fixed top-0 right-0 bg-primary" : "absolute top-0 right-0"
       }  z-50`}
     >
       <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .transition-global {
+        @apply transition-all duration-700 ease-in-out
+    }
+}
+
 @layer base {
     body {
         @apply bg-fourth
