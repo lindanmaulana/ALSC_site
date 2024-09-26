@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import useScroll from "../../hooks/useScroll";
 import usePropsDriling from "../../hooks/usePropsDriling";
 import { useCallback } from "react";
+import HamburgerMenu from "./HamburgerMenu";
+import { useState } from "react";
 
 const NavbarComponent = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const scroll = useScroll();
   const { homeRef, empathizeRef, defineRef, prototypeRef } = usePropsDriling();
   const dataNavbar = [
@@ -34,6 +37,10 @@ const NavbarComponent = () => {
       params.current.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header
       className={`w-full transition-global ${
@@ -65,6 +72,24 @@ const NavbarComponent = () => {
                 ))}
               </ul>
             </nav>
+            <HamburgerMenu isOpen={isOpen} handleOpen={handleOpen} />
+           
+              <nav aria-label="Global" className={`${isOpen ? "opacity-100" : "opacity-0"} fixed bottom-0 right-0 w-full py-4 transition-global bg-primary`}>
+                <ul className="flex items-center justify-center gap-6 text-sm">
+                  {dataNavbar?.map((values) => (
+                    <li key={values.id}>
+                      <Link
+                        className="font-semibold text-white transition hover:text-gray-500/75"
+                        onClick={() => handlePropsDriling(values.ref)}
+                      >
+                        {" "}
+                        {values.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+          
           </div>
         </div>
       </div>
